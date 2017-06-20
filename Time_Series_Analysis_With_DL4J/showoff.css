@@ -38,3 +38,16 @@ When centered it is on top of text
   content: url(resources/skymind_medium.png);
 }
 
+/*
+Size the text in the callout box
+{
+  color: rgb(79, 180, 226);
+  font-family: Georgia;
+}
+p.callout
+*/
+
+p.callout {
+    font-weight: bold;
+    font-size: xx-large;
+}
