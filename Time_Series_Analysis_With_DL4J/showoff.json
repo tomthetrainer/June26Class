@@ -48,10 +48,9 @@
 	"FeedForward Neural Networks Explained":
 	["Neural_networks_explained/01.md"],
 
-
-	"Abalone Lab":
-	["Abalone_intro/01.md"],
-
+		"Convolutional Neural Networks":
+	["Convolutional_Neural_Networks/01.md"],
+	
 	"Data Ingest Case Study: Text":
 	["Data_Ingest_Case_Study_Text/01.md"],
 	
@@ -61,11 +60,10 @@
 	"LSTM Character Generation of Weather Forecast Lab":
 	["Weather_Forecast_lab/01.md"],
 	
-	"Convolutional Neural Networks":
-	["Convolutional_Neural_Networks/01.md"],
+	"LSTM for classification of Univariate Sequence Data":
+	["UCI_Sequence_Data_Intro/01.md"],
 
-	"Convolutional Neural Network Lab":
-	["Convolutional_Neural_Networks/Lab.md"],
+	
 
 	"The Paths to Production": [
             "Paths_to_production/01.md"

@@ -16,24 +16,22 @@
 * These questions frame all machine learning workflows
 
 
+!SLIDE 
 
-!SLIDE
+# What Neural Networks Do
 
-#  In neural networks we’re solving systems of (non-linear) equations of the form
-
-## <font color="red">A</font><font color="blue">x</font> = <font color="green">b</font>
-
-* <font color="red">A</font> matrix
-	* This is our set of input data converted into an array of vectors
-* <font color="blue">x</font> vector
-	* The parameter vector of weights representing our model
-* <font color="green">b</font> vector
-	* Vector of output values or labels matching the rows  in the A matrix
+* A = Input
+* B = Expected Output
+* Map A ==> B 
+* Using complex derivitable computation graph
+  * Apply random weights at each edge
+  * Adjust weights towards least error
+  * repeat
 
 
 !SLIDE
 
-#<font color="red">A</font><font color="blue">x</font> = <font color="green">b</font> Visually
+#<font color="red">A</font>==> <font color="green">B</font> Visually
 ![alt text](../resources/vector_table.png)
 
 
@@ -48,6 +46,38 @@
 	* For a positive integer n, a vector is an n-tuple, ordered (multi)set, or array of n numbers, called elements or scalars
 * Matricies
 	* Group of vectors that have the same dimension (number of columns)
+
+
+!SLIDE
+
+# Linear Algebra Terms Continued..
+
+* Scalar as point
+  * one dimension
+* Vector as line
+  * two dimensions
+* matrix as plane
+  * three dimensions
+* Tensor
+  * More than 3 dimensions
+  * Tensor == NDarray
+
+!SLIDE
+
+# Everything is a Tensor
+
+* Rank of NDArray == Number of Dimension
+* Rank 0 == scalar
+* Rank 1 == vector
+* Rank 2 == matrix 
+
+~~~SECTION:notes~~~
+
+Do I go as deep as Stride here? 
+
+
+~~~ENDSECTION~~~
+
 
 !SLIDE
 
@@ -67,23 +97,16 @@
 
 # Neural Networks Use an Iterative Method to Solve a System of Equations
 
+* Values are tried
+* Error is calculated
+* Values are updated
+
+
 ~~~SECTION:notes~~~
 
 This is a presenter note example.
 
 ~~~ENDSECTION~~~
-
-
-!SLIDE
-
-# Training a Neural Net
-
-## REPEAt KILL
-
-* Input features passed in
-* Output generated
-* Error calculated
-* Weights adjusted via backprop to decrease error
 
 
 !SLIDE
@@ -105,6 +128,12 @@ This is a presenter note example.
 
 !SLIDE
 
+
+# Overfitting the Training Data
+
+![alt text](../resources/overfit.png)
+
+
 # Optimization
 
 * Iteratively adjust the values of the x parameter vector
@@ -115,6 +144,14 @@ This is a presenter note example.
 	* “mean squared error”
 * How do we make choices about the next iterative “step”?
   * Where  “step” is how we change the x parameter vector
+
+
+!SLIDE
+
+# Loss Function
+
+* Assigns cost to output vs expected output
+* Optimization seeks to minimize the value of the loss function
 
 
 !SLIDE
